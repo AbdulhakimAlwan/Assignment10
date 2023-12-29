@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup/Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container pt-5">
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-6">
+        <form id="signupForm">
+          <h2>Smart Signup System</h2>
+          <div class="form-group">
+            <label for="signname"></label>
+            <input type="text" class="form-control" id="signname" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="signEmail"></label>
+            <input type="email" class="form-control" id="signEmail" placeholder="Enter your email">
+          </div>
+          <div class="form-group text-center">
+            <label for="signPassword"></label>
+            <input type="password" class="form-control" id="signPassword" placeholder="Enter Password">
+            <small id="allInputsError" class="text-danger m-3 fs-6"></small>
+          </div>
+          <button type="button" id="signupButton" class="btn btn-primary">Sign Up</button>
+          <div class="signup-link text-center mt-3">
+            <span class="text-white">Already have an account?</span>
+            <a href="#" id="signinLink">Sign in</a>
+          </div>
+        </form>
+
+        <hr>
+
+        <form id="loginForm" style="display: none;" class="form-group">
+          <h2>Smart Login System</h2>
+          <div id="signupSuccessMessage" class="text-success fs-5 text-center" style="display: none;">
+            You Signed up. Please log in.
+          </div>
+          <div class="form-group">
+            <label for="logEmail"></label>
+            <input type="email" class="form-control" id="logEmail" placeholder="Enter your email">
+          </div>
+          <div class="form-group text-center">
+            <label for="logPassword"></label>
+            <input type="password" class="form-control" id="logPassword" placeholder="Enter Password">
+            <small id="loginError" class="text-danger m-3 fs-6" style="display: none;"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <div class="signup-link text-center mt-3">
+            <span class="text-white">Don't have an account?</span>
+            <a href="#" id="signupLink" class="text-decoration-none">Sign Up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
